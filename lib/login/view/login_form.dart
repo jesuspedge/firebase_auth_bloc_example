@@ -1,4 +1,5 @@
 import 'package:firebase_bloc_login_example/login/login_exports.dart';
+import 'package:firebase_bloc_login_example/sign_up/sign_up_exports.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
@@ -147,8 +148,9 @@ class _SignUpButton extends StatelessWidget {
 
     return TextButton(
       key: const Key('loginForm_createAccount_flatButton'),
-      onPressed:
-          () {}, //=> Navigator.of(context).push<void>(SignUpPage.route()),
+      onPressed: () {
+        Navigator.of(context).push<void>(SignUpPage.route());
+      },
       child: Text(
         'Create account',
         style: TextStyle(color: theme.primaryColor),
