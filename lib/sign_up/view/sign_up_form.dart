@@ -16,7 +16,7 @@ class SignUpForm extends StatelessWidget {
           ScaffoldMessenger.of(context)
             ..hideCurrentSnackBar()
             ..showSnackBar(
-              SnackBar(content: Text(state.errorMessage ?? 'Sign Up Filure')),
+              SnackBar(content: Text(state.errorMessage ?? 'Sign Up Failure')),
             );
         }
       },
